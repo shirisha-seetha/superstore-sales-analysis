@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Superstore Sales Analysis
 
 End-to-end sales analysis of the Sample Superstore dataset, built across three tools — *Excel, **Power BI, and **Python (Pandas)* — to explore regional performance, category profitability, discount impact, and customer behavior.
@@ -28,7 +27,7 @@ End-to-end sales analysis of the Sample Superstore dataset, built across three t
 |---|---|
 | *Excel* | PivotTables, PivotCharts, slicers, KPI cards — a full interactive dashboard (EDA tab for detailed breakdowns, Overview tab as the dashboard) |
 | *Power BI* | Two-page report — Sales Dashboard (KPIs, regional/category trends, discount analysis, top customers) and Product Performance Analysis (top/bottom products, customer segment mix) |
-| *Pandas (Python)* | Data cleaning, statistical analysis (correlation, significance testing, outlier detection), and visualizations |
+| *Pandas (Python)* | Data cleaning, statistical analysis (correlation, significance testing, outlier detection), RFM customer segmentation, and visualizations |
 
 ---
 
@@ -48,7 +47,6 @@ End-to-end sales analysis of the Sample Superstore dataset, built across three t
 ### Excel Dashboard
 ![Excel Overview](screenshots/excel_overview.png)
 
-
 ### Excel EDA Sheet
 ![Excel EDA](screenshots/excel_eda.png)
 
@@ -58,6 +56,9 @@ End-to-end sales analysis of the Sample Superstore dataset, built across three t
 ### Power BI — Product Performance Analysis
 ![Power BI Page 2](screenshots/powerbi_page2.png)
 
+### Discount vs Profit (Pandas)
+![Discount vs Profit](screenshots/discount_vs_profit.png)
+
 ---
 
 ## Project Structure
@@ -66,21 +67,20 @@ End-to-end sales analysis of the Sample Superstore dataset, built across three t
 superstore-sales-analysis/
 ├── README.md
 ├── data/
-|__ |__ samplesuperstore_raw.csv
-│   └── samplesuperstore_cleaned.csv
+│   └── SampleSuperstore.csv
 ├── excel/
 │   └── superstore_dashboard.xlsx
 ├── powerbi/
 │   └── superstore_dashboard.pbix
-├── python_analysis/
+├── pandas/
 │   └── superstore_analysis.ipynb
 └── screenshots/
     ├── excel_overview.png
     ├── excel_eda.png
     ├── powerbi_page1.png
-    └── powerbi_page2.png
-```   
-
+    ├── powerbi_page2.png
+    └── discount_vs_profit.png
+```
 
 ---
 
@@ -90,81 +90,10 @@ superstore-sales-analysis/
 
 *Power BI:* Open powerbi/superstore_dashboard.pbix in Power BI Desktop (free). Page 1 is the main dashboard; Page 2 covers product-level performance.
 
-*Pandas:* Open python_analysis/superstore_analysis.ipynb in Jupyter. Update the FILE_PATH variable to point to data/SampleSuperstore.csv, then run all cells.
+*Pandas:* Open pandas/superstore_analysis.ipynb in Jupyter. Update the FILE_PATH variable to point to data/SampleSuperstore.csv, then run all cells.
 
 ---
 
 ## Data Source
 
-Sample Superstore dataset — a widely used sample retail dataset (orders, customers, products, sales, and profit across the US), commonly used for BI/analytics practi
-=======
-Superstore Sales Dashboard
-
-Project Overview
-
-This project analyzes Superstore sales data to identify business trends, product performance, regional sales distribution, and profitability. The analysis was performed using Python and Pandas, while visualizations were created using Matplotlib and Power BI.
-
-Objectives
-
-- Clean and prepare the dataset for analysis.
-- Analyze sales, profit, and order performance.
-- Identify top-performing regions and product categories.
-- Visualize business trends through charts and dashboards.
-- Generate actionable business insights.
-
-Tools and Technologies
-
-- Python
-- Pandas
-- Matplotlib
-- Power BI
-
-Data Cleaning
-
-The following data preparation steps were performed:
-
-- Checked for missing values.
-- Handled missing records.
-- Verified duplicate records.
-- Validated data types.
-- Prepared the dataset for analysis and visualization.
-
-Analysis Performed
-
-- Total Sales Analysis
-- Total Profit Analysis
-- Total Orders Analysis
-- Sales by Region
-- Sales by Product Category
-- Monthly Sales Trend Analysis
-- Top Products by Sales
-
-Dashboard Features
-
-- KPI Cards (Total Sales, Total Profit, Total Orders)
-- Monthly Sales Trend
-- Sales by Region
-- Sales by Category
-- Top Products by Sales
-- Interactive Filters (Category, Region, Order Date)
-
-Key Insights
-
-- Total Sales reached approximately 8.95M.
-- Total Profit reached approximately 1.31M.
-- The Central region generated the highest sales.
-- Technology was the best-performing product category.
-- Sales showed strong performance during the later months of the year.
-- A small group of products contributed significantly to overall sales.
-
-Files Included
-
-- superstore.ipynb
-- superstore.pbix
-- cleaned_superstore.csv
-- Dashboard.jpeg
-
-Conclusion
-
-The project demonstrates the complete data analysis workflow, including data cleaning, exploratory analysis, visualization, and dashboard development. The insights generated can help support data-driven business decisions.
->>>>>>> ad023e2656f077a53e9b87cb390b75e21c2f3b5e
+Sample Superstore dataset — a widely used sample retail dataset (orders, customers, products, sales, and profit across the US), commonly used for BI/analytics practice.
