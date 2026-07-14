@@ -27,7 +27,7 @@ End-to-end sales analysis of the Sample Superstore dataset, built across three t
 |---|---|
 | *Excel* | PivotTables, PivotCharts, slicers, KPI cards — a full interactive dashboard (EDA tab for detailed breakdowns, Overview tab as the dashboard) |
 | *Power BI* | Two-page report — Sales Dashboard (KPIs, regional/category trends, discount analysis, top customers) and Product Performance Analysis (top/bottom products, customer segment mix) |
-| *Pandas (Python)* | Data cleaning, statistical analysis (correlation, significance testing, outlier detection), RFM customer segmentation, and visualizations |
+| *Pandas (Python)* | Data cleaning, statistical analysis (correlation, significance testing, outlier detection), and visualizations |
 
 ---
 
@@ -56,8 +56,7 @@ End-to-end sales analysis of the Sample Superstore dataset, built across three t
 ### Power BI — Product Performance Analysis
 ![Power BI Page 2](screenshots/powerbi_page2.png)
 
-### Discount vs Profit (Pandas)
-![Discount vs Profit](screenshots/discount_vs_profit.png)
+
 
 ---
 
@@ -72,14 +71,14 @@ superstore-sales-analysis/
 │   └── superstore_dashboard.xlsx
 ├── powerbi/
 │   └── superstore_dashboard.pbix
-├── pandas/
+├── python_analysis/
 │   └── superstore_analysis.ipynb
 └── screenshots/
     ├── excel_overview.png
     ├── excel_eda.png
     ├── powerbi_page1.png
-    ├── powerbi_page2.png
-    └── discount_vs_profit.png
+    └── powerbi_page2.png
+     
 ```
 
 ---
@@ -90,7 +89,7 @@ superstore-sales-analysis/
 
 *Power BI:* Open powerbi/superstore_dashboard.pbix in Power BI Desktop (free). Page 1 is the main dashboard; Page 2 covers product-level performance.
 
-*Pandas:* Open pandas/superstore_analysis.ipynb in Jupyter. Update the FILE_PATH variable to point to data/SampleSuperstore.csv, then run all cells.
+*Pandas:* Open python_analysis/superstore_analysis.ipynb in Jupyter. Update the FILE_PATH variable to point to data/SampleSuperstore.csv, then run all cells.
 
 ---
 
